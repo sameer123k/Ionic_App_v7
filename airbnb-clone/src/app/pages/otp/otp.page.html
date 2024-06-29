@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar class="header-tool">
+    <div class="header">
+      <ion-icon name="arrow-back-outline" class="back-arrow" routerLink="/home"></ion-icon>
+     <div>
+     <p>Confirm your number</p>
+     </div>
+     <div>
+
+     </div>
+      </div>
+ 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <div class="main-div"> 
+ <p class="p1">Enter the code we sent over SMS to 9876543210</p>
+ <!-- <small class="small-tag">Sent via SMS to 9876543210</small> -->
+<div class="inputs">
+  <ion-input type="number"></ion-input>
+  <ion-input type="number"></ion-input>
+  <ion-input type="number"></ion-input>
+  <ion-input type="number"></ion-input>
+  <ion-input type="number"></ion-input>
+  <ion-input type="number"></ion-input>
+</div>
+
+<!-- button -->
+<div class="btn-div">
+  <ion-button expand="block" routerLink="/main-home">Continue</ion-button>
+</div>
+
+<!-- resend sms -->
+<div class="resend-outer">
+  <div class="resend-button">
+    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+    <div>
+      <p>Didn't get a code? <span>Resend again</span></p>
+    </div>
+  </div>
+</div>
+ 
+ </div>
+</ion-content>

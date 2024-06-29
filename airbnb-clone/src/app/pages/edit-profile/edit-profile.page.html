@@ -1,0 +1,114 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="header-tool">
+  <div class="header-div">
+    <ion-icon name="arrow-back-outline" routerLink="/profile"></ion-icon>
+    <div>
+     <p (click)="setOpen(true)">Edit</p>
+    </div>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <div class="main-div">
+  <div class="section-1 ion-margin">
+    <ion-icon name="person-circle-outline"></ion-icon>
+    <p>unknown</p>
+    <span>Guest</span>
+  </div>
+  <div class="section-2 ion-margin">
+    <p>Identify verification</p>
+    <span>Show others you're really with the identity verification badge.</span>
+    <ion-button>Get the badge</ion-button>
+  </div>
+  <hr>
+  <div class="section-3 ion-margin">
+    <p>It's time to create your profile</p>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquam ipsam, soluta delectus recusandae magni! Consequatur impedit adipisci obcaecati rem.</span>
+     <ion-button expand="block" (click)="setOpen(true)">Create profile</ion-button>
+     <!-- modal -->
+     <ion-modal [isOpen]="isModalOpen">
+      <ng-template>
+        <ion-header>
+          <div class="header ion-padding">
+            <ion-icon name="close-outline" (click)="setOpen(false)"></ion-icon>
+            <div>
+              <p>Edit profile</p>
+            </div>
+          </div>
+        </ion-header>
+        <ion-content>
+         <div class="main-div ion-padding">
+          <div class="modal-section-1">
+            <div class="circle">
+              <ion-icon name="person-outline"></ion-icon>
+            <div class="add">
+              <ion-icon name="camera-outline"></ion-icon>
+              <span>Add</span>
+            </div>
+            </div>
+          </div>
+          <div class="modal-section-2">
+            <p>Your profile</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iusto beatae delectus odio quibusdam?</span>
+          </div>
+          <div class="modal-section-3">
+              <div class="language-div">
+                <ion-icon name="school-outline"></ion-icon>
+                <div>
+                  <ion-item lines="none">
+                    <ion-input type="text" placeholder="Where I went to school"></ion-input>
+                  </ion-item>
+                </div>
+              </div>
+            </div>
+            <div class="modal-section-3">
+              <div class="language-div">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+                <div>
+                  <ion-item lines="none">
+                    <ion-input type="text" placeholder="My work"></ion-input>
+                  </ion-item>
+                </div>
+              </div>
+            </div>
+            <div class="modal-section-3">
+              <div class="language-div">
+                <ion-icon name="location-outline"></ion-icon>
+                <div>
+                  <ion-item lines="none">
+                    <ion-input type="text" placeholder="Where i live"></ion-input>
+                  </ion-item>
+                </div>
+              </div>
+            </div>
+            <div class="modal-section-3">
+              <div class="language-div">
+                <ion-icon name="language-outline"></ion-icon>
+                <div>
+                  <ion-item lines="none">
+                    <ion-input type="text" placeholder="Languages I speak"></ion-input>
+                  </ion-item>
+                </div>
+              </div>
+            </div>
+            <div class="modal-section-3">
+              <div class="language-div">
+                <ion-icon name="musical-notes-outline"></ion-icon>
+                <div>
+                  <ion-item lines="none">
+                    <ion-input type="text" placeholder="My favourite song"></ion-input>
+                  </ion-item>
+                </div>
+              </div>
+            </div>
+            <div class="btn-div">
+              <ion-button expand="block">Done</ion-button>
+             </div>
+         </div>        
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </div>
+ </div>
+</ion-content>

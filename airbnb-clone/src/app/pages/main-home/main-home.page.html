@@ -1,0 +1,1126 @@
+<ion-content>
+  <!-- section-1 -->
+  <div class="section-1">
+    <div class="header-div">
+      <ion-icon name="filter-outline"></ion-icon>
+      <div>
+        <h5>Facial Products</h5>
+      </div>
+      <ion-icon name="cart-outline" routerLink="/reserve"></ion-icon>
+    </div>
+    <div class="searchbar-div">
+      <ion-searchbar placeholder="Search your location ?"></ion-searchbar>
+    </div>
+    <!-- segment buttons -->
+    <ion-segment [(ngModel)]="segment" scrollable color="dark">
+      <ion-segment-button value="pools">
+        <div>
+          <div class="slider-bg-box">
+            <img src="../../../assets/icon/hairspa icon.png" alt="" height="27px">
+            <!-- <ion-icon name="medkit-outline"></ion-icon>  -->
+          </div>
+          <p>Hair Spa</p>
+        </div>
+      </ion-segment-button>
+      <ion-segment-button value="farms">
+       <div>
+        <div class="slider-bg-box">
+          <img src="../../../assets/icon/facepack icon.png" alt="" height="25px">
+        </div>
+        <p>Face Pack</p>
+       </div>
+      </ion-segment-button>
+      <ion-segment-button value="views">
+       <div>
+        <div class="slider-bg-box">
+          <img src="../../../assets/icon/lotion icon.png" alt="" height="25px">
+        </div>
+        <p>Lotion</p>
+       </div>
+      </ion-segment-button>
+      <ion-segment-button value="cabin">
+        <div>
+          <div class="slider-bg-box">
+            <!-- <ion-icon name="home-outline" style="font-size: 25px;"></ion-icon> -->
+            <!-- <ion-icon name="hand-left-outline"></ion-icon> -->
+          <img src="../../../assets/icon/scissors icon.png" alt="" height="25px">
+          </div>
+          <p>Scissor</p>
+        </div>
+       </ion-segment-button>
+
+       <ion-segment-button value="parks">
+        <div>
+          <div class="slider-bg-box">
+            <!-- <ion-icon name="sparkles-outline" style="font-size: 25px;"></ion-icon> -->
+            <img src="../../../assets/icon/cream icon.png" alt="" height="25px">
+          </div>
+          <p>
+            Massage Cream</p>
+        </div>
+       </ion-segment-button>
+       <!-- <ion-segment-button value="boats">
+        <div>
+          <div class="slider-bg-box">
+
+            <ion-icon name="boat-outline" style="font-size: 25px;"></ion-icon>
+          </div>
+          <p>Boats</p>
+        </div>
+       </ion-segment-button>
+       <ion-segment-button value="new">
+        <div>
+          <div class="slider-bg-box">
+            <ion-icon name="key-outline" style="font-size: 25px;"></ion-icon>
+          </div>
+          <p>New</p>
+        </div>
+       </ion-segment-button>
+       <ion-segment-button value="deserts">
+        <div>
+          <div class="slider-bg-box">
+            <ion-icon name="bonfire-outline" style="font-size: 25px;"></ion-icon>
+          </div>
+          <p>Deserts</p>
+        </div>
+       </ion-segment-button>
+       <ion-segment-button value="play">
+        <div>
+          <div class="slider-bg-box">
+            <ion-icon name="play-skip-forward-outline" style="font-size: 25px;"></ion-icon>
+          </div>
+          <p>Play</p>
+        </div>
+       </ion-segment-button> -->
+
+  </ion-segment>
+
+  </div>
+  <!-- section-2 -->
+  <div class="section-2">
+    <!-- switch contens -->
+  <div [ngSwitch]="segment">
+
+
+    <div *ngSwitchCase="'pools'">
+      <!-- dogs -->
+         <div class="pools-main-div">
+
+          <!-- slider content-1 -->
+           <div class="slider-content-1">
+          <!-- section-2 -->
+          <div class="section-2">
+            <swiper-container [loop]="true" [pagination]="true">
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/spa1.jpg" alt="" >
+                  <!-- <ion-icon name="heart-outline" ></ion-icon> -->
+                 <ion-icon name="heart-outline" ></ion-icon>
+                 <!-- <div class="sold-div">
+                  <p class="sold">Sold</p>
+                 </div> -->
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/spa2.png" alt="">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/spa3.jpg" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/spa4.avif" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+          <!-- section-3 -->
+          <div class="section-3">
+       <div class="div1">
+        <p>Hair Wax</p>
+        <!-- <span>63 kilometers away</span> -->
+        <span>&#8377; 299</span>
+        <div class="location-div">
+          <ion-icon name="location-outline"></ion-icon>
+          <span>Vaishali Nagar, Jaipur , India</span>
+        </div>
+       </div>
+       <div  class="div2">
+        <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+       </div>
+          </div>
+          </div>
+          <!-- 2nd -->
+          <div class="slider-content-1">
+            <!-- section-2 -->
+            <div class="section-2">
+              <swiper-container [loop]="true" [pagination]="true">
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/spa2.png" alt="" >
+                    <!-- <ion-icon name="heart-outline" ></ion-icon> -->
+                   <ion-icon name="heart-outline" ></ion-icon>
+                   <!-- <div class="sold-div">
+                    <p class="sold">Sold</p>
+                   </div> -->
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/spa2.png" alt="">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/spa3.jpg" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/spa4.avif" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <!-- section-3 -->
+            <div class="section-3">
+         <div class="div1">
+          <p>Hair Wax</p>
+          <!-- <span>63 kilometers away</span> -->
+          <span>&#8377; 299</span>
+          <div class="location-div">
+            <ion-icon name="location-outline"></ion-icon>
+            <span>Vaishali Nagar, Jaipur , India</span>
+          </div>
+         </div>
+         <div  class="div2">
+          <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+         </div>
+            </div>
+            </div>
+            <!-- 3rd -->
+            <div class="slider-content-1">
+              <!-- section-2 -->
+              <div class="section-2">
+                <swiper-container [loop]="true" [pagination]="true">
+                  <swiper-slide >
+                    <div class="img-div">
+                      <img src="../../../assets/icon/spa3.jpg" alt="" >
+                      <!-- <ion-icon name="heart-outline" ></ion-icon> -->
+                     <ion-icon name="heart-outline" ></ion-icon>
+                     <!-- <div class="sold-div">
+                      <p class="sold">Sold</p>
+                     </div> -->
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide >
+                    <div class="img-div">
+                      <img src="../../../assets/icon/spa2.png" alt="">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide >
+                    <div class="img-div">
+                      <img src="../../../assets/icon/spa3.jpg" alt="" >
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide >
+                    <div class="img-div">
+                      <img src="../../../assets/icon/spa4.avif" alt="" >
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                  </swiper-slide>
+                </swiper-container>
+              </div>
+              <!-- section-3 -->
+              <div class="section-3">
+           <div class="div1">
+            <p>Hair Wax</p>
+            <!-- <span>63 kilometers away</span> -->
+            <span>&#8377; 299</span>
+            <div class="location-div">
+              <ion-icon name="location-outline"></ion-icon>
+              <span>Vaishali Nagar, Jaipur , India</span>
+            </div>
+           </div>
+           <div  class="div2">
+            <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+           </div>
+              </div>
+              </div>
+              <!-- 4th -->
+              <div class="slider-content-1">
+                <!-- section-2 -->
+                <div class="section-2">
+                  <swiper-container [loop]="true" [pagination]="true">
+                    <swiper-slide >
+                      <div class="img-div">
+                        <img src="../../../assets/icon/spa4.avif" alt="" >
+                        <!-- <ion-icon name="heart-outline" ></ion-icon> -->
+                       <ion-icon name="heart-outline" ></ion-icon>
+                       <!-- <div class="sold-div">
+                        <p class="sold">Sold</p>
+                       </div> -->
+                      </div>
+                    </swiper-slide>
+                    <swiper-slide >
+                      <div class="img-div">
+                        <img src="../../../assets/icon/spa2.png" alt="">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </swiper-slide>
+                    <swiper-slide >
+                      <div class="img-div">
+                        <img src="../../../assets/icon/spa3.jpg" alt="" >
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </swiper-slide>
+                    <swiper-slide >
+                      <div class="img-div">
+                        <img src="../../../assets/icon/spa4.avif" alt="" >
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </swiper-slide>
+                  </swiper-container>
+                </div>
+                <!-- section-3 -->
+                <div class="section-3">
+             <div class="div1">
+              <p>Hair Wax</p>
+              <!-- <span>63 kilometers away</span> -->
+              <span>&#8377; 299</span>
+              <div class="location-div">
+                <ion-icon name="location-outline"></ion-icon>
+                <span>Vaishali Nagar, Jaipur , India</span>
+              </div>
+             </div>
+             <div  class="div2">
+              <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+             </div>
+                </div>
+                </div>
+
+
+         </div>
+    </div>
+    <!-- face pack-->
+    <div *ngSwitchCase="'farms'">
+      <div class="farm-main-div">
+
+      <!-- slider content-1 -->
+       <div class="slider-content-1">
+      <!-- section-2 -->
+      <div class="section-2">
+        <swiper-container [loop]="true" [pagination]="true">
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/pack1.jpg" alt="" >
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/pack2.webp" alt="">
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/pack3.webp" alt="" >
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/pack4.jpg" alt="" >
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      <!-- section-3 -->
+      <div class="section-3">
+        <div class="div1">
+         <p>Face Pack</p>
+         <!-- <span>63 kilometers away</span> -->
+         <span>&#8377; 349</span>
+         <div class="location-div">
+           <ion-icon name="location-outline"></ion-icon>
+           <span>Mansarovar, Jaipur , India</span>
+         </div>
+        </div>
+        <div  class="div2">
+         <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+        </div>
+           </div>
+      </div>
+      <!-- slider content-2 -->
+      <div class="slider-content-1">
+        <!-- section-2 -->
+        <div class="section-2">
+          <swiper-container [loop]="true" [pagination]="true">
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/pack2.webp" alt="" >
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/pack2.webp" alt="">
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/pack3.webp" alt="" >
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/pack4.jpg" alt="" >
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+        <!-- section-3 -->
+        <div class="section-3">
+          <div class="div1">
+           <p>Face Pack</p>
+           <!-- <span>63 kilometers away</span> -->
+           <span>&#8377; 349</span>
+           <div class="location-div">
+             <ion-icon name="location-outline"></ion-icon>
+             <span>Mansarovar, Jaipur , India</span>
+           </div>
+          </div>
+          <div  class="div2">
+           <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+          </div>
+             </div>
+        </div>
+
+         <!-- slider content-3 -->
+         <div class="slider-content-1">
+          <!-- section-2 -->
+          <div class="section-2">
+            <swiper-container [loop]="true" [pagination]="true">
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/pack3.webp" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/pack2.webp" alt="">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/pack3.webp" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/pack4.jpg" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+          <!-- section-3 -->
+          <div class="section-3">
+            <div class="div1">
+             <p>Face Pack</p>
+             <!-- <span>63 kilometers away</span> -->
+             <span>&#8377; 349</span>
+             <div class="location-div">
+               <ion-icon name="location-outline"></ion-icon>
+               <span>Mansarovar, Jaipur , India</span>
+             </div>
+            </div>
+            <div  class="div2">
+             <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+            </div>
+               </div>
+          </div>
+
+           <!-- slider content-4 -->
+           <div class="slider-content-1">
+            <!-- section-2 -->
+            <div class="section-2">
+              <swiper-container [loop]="true" [pagination]="true">
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/pack4.jpg" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/pack2.webp" alt="">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/pack3.webp" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/pack4.jpg" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <!-- section-3 -->
+            <div class="section-3">
+              <div class="div1">
+               <p>Face Pack</p>
+               <!-- <span>63 kilometers away</span> -->
+               <span>&#8377; 349</span>
+               <div class="location-div">
+                 <ion-icon name="location-outline"></ion-icon>
+                 <span>Mansarovar, Jaipur , India</span>
+               </div>
+              </div>
+              <div  class="div2">
+               <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+              </div>
+                 </div>
+            </div>
+     </div>
+    </div>
+
+      <!-- lotions-->
+    <div *ngSwitchCase="'views'">
+      <div class="farm-main-div">
+
+      <!-- slider content-1 -->
+       <div class="slider-content-1">
+      <!-- section-2 -->
+      <div class="section-2">
+        <swiper-container [loop]="true" [pagination]="true">
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/lotion1.jpg" alt="" >
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/lotion2.jpg" alt="">
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/lotion3.jpg" alt="" >
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/lotion4.jpg" alt="" >
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      <!-- section-3 -->
+      <div class="section-3">
+        <div class="div1">
+         <p>Lotion</p>
+         <!-- <span>63 kilometers away</span> -->
+         <span>&#8377; 199</span>
+         <div class="location-div">
+           <ion-icon name="location-outline"></ion-icon>
+           <span>Sodala, Jaipur , India</span>
+         </div>
+        </div>
+        <div  class="div2">
+         <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+        </div>
+           </div>
+      </div>
+      <!-- slider content-2 -->
+      <div class="slider-content-1">
+        <!-- section-2 -->
+        <div class="section-2">
+          <swiper-container [loop]="true" [pagination]="true">
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/lotion2.jpg" alt="" >
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/lotion2.jpg" alt="">
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/lotion3.jpg" alt="" >
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/lotion4.jpg" alt="" >
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+        <!-- section-3 -->
+        <div class="section-3">
+          <div class="div1">
+           <p>Lotion</p>
+           <!-- <span>63 kilometers away</span> -->
+           <span>&#8377; 199</span>
+           <div class="location-div">
+             <ion-icon name="location-outline"></ion-icon>
+             <span>Sodala, Jaipur , India</span>
+           </div>
+          </div>
+          <div  class="div2">
+           <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+          </div>
+             </div>
+        </div>
+
+         <!-- slider content-3 -->
+         <div class="slider-content-1">
+          <!-- section-2 -->
+          <div class="section-2">
+            <swiper-container [loop]="true" [pagination]="true">
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/lotion3.jpg" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/lotion2.jpg" alt="">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/lotion3.jpg" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/lotion4.jpg" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+          <!-- section-3 -->
+          <div class="section-3">
+            <div class="div1">
+             <p>Lotion</p>
+             <!-- <span>63 kilometers away</span> -->
+             <span>&#8377; 199</span>
+             <div class="location-div">
+               <ion-icon name="location-outline"></ion-icon>
+               <span>Sodala, Jaipur , India</span>
+             </div>
+            </div>
+            <div  class="div2">
+             <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+            </div>
+               </div>
+          </div>
+           <!-- slider content-4 -->
+           <div class="slider-content-1">
+            <!-- section-2 -->
+            <div class="section-2">
+              <swiper-container [loop]="true" [pagination]="true">
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/lotion4.jpg" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/lotion2.jpg" alt="">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/lotion3.jpg" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/lotion4.jpg" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <!-- section-3 -->
+            <div class="section-3">
+              <div class="div1">
+               <p>Lotion</p>
+               <!-- <span>63 kilometers away</span> -->
+               <span>&#8377; 199</span>
+               <div class="location-div">
+                 <ion-icon name="location-outline"></ion-icon>
+                 <span>Sodala, Jaipur , India</span>
+               </div>
+              </div>
+              <div  class="div2">
+               <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+              </div>
+                 </div>
+            </div>
+     </div>
+    </div>
+
+     <!-- scissors -->
+    <div *ngSwitchCase="'cabin'">
+      <div class="farm-main-div">
+
+      <!-- slider content-1 -->
+       <div class="slider-content-1">
+      <!-- section-2 -->
+      <div class="section-2">
+        <swiper-container [loop]="true" [pagination]="true">
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/scissor1.webp" alt="" >
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/scissor2.jpg" alt="">
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/scissor3.jpg" alt="" >
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/scissor4.jpg" alt="" >
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      <!-- section-3 -->
+      <div class="section-3">
+        <div class="div1">
+         <p>Scissors</p>
+         <!-- <span>63 kilometers away</span> -->
+         <span>&#8377; 599</span>
+         <div class="location-div">
+           <ion-icon name="location-outline"></ion-icon>
+           <span>Mansarovar, Jaipur , India</span>
+         </div>
+        </div>
+        <div  class="div2">
+         <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+        </div>
+           </div>
+      </div>
+      <!-- slider content-2 -->
+      <div class="slider-content-1">
+        <!-- section-2 -->
+        <div class="section-2">
+          <swiper-container [loop]="true" [pagination]="true">
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/scissor2.jpg" alt="" >
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/scissor2.jpg" alt="">
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/scissor3.jpg" alt="" >
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/scissor4.jpg" alt="" >
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+        <!-- section-3 -->
+        <div class="section-3">
+          <div class="div1">
+           <p>Scissors</p>
+           <!-- <span>63 kilometers away</span> -->
+           <span>&#8377; 599</span>
+           <div class="location-div">
+             <ion-icon name="location-outline"></ion-icon>
+             <span>Mansarovar, Jaipur , India</span>
+           </div>
+          </div>
+          <div  class="div2">
+           <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+          </div>
+             </div>
+        </div>
+
+         <!-- slider content-3 -->
+         <div class="slider-content-1">
+          <!-- section-2 -->
+          <div class="section-2">
+            <swiper-container [loop]="true" [pagination]="true">
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/scissor3.jpg" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/scissor2.jpg" alt="">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/scissor3.jpg" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/scissor4.jpg" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+          <!-- section-3 -->
+          <div class="section-3">
+            <div class="div1">
+             <p>Scissors</p>
+             <!-- <span>63 kilometers away</span> -->
+             <span>&#8377; 599</span>
+             <div class="location-div">
+               <ion-icon name="location-outline"></ion-icon>
+               <span>Mansarovar, Jaipur , India</span>
+             </div>
+            </div>
+            <div  class="div2">
+             <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+            </div>
+               </div>
+          </div>
+           <!-- slider content-4 -->
+           <div class="slider-content-1">
+            <!-- section-2 -->
+            <div class="section-2">
+              <swiper-container [loop]="true" [pagination]="true">
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/scissor4.jpg" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/scissor2.jpg" alt="">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/scissor3.jpg" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/scissor4.jpg" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <!-- section-3 -->
+            <div class="section-3">
+              <div class="div1">
+               <p>Scissors</p>
+               <!-- <span>63 kilometers away</span> -->
+               <span>&#8377; 599</span>
+               <div class="location-div">
+                 <ion-icon name="location-outline"></ion-icon>
+                 <span>Mansarovar, Jaipur , India</span>
+               </div>
+              </div>
+              <div  class="div2">
+               <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+              </div>
+                 </div>
+            </div>
+     </div>
+    </div>
+
+
+      <!-- massage -->
+    <div *ngSwitchCase="'parks'">
+      <div class="farm-main-div">
+
+      <!-- slider content-1 -->
+       <div class="slider-content-1">
+      <!-- section-2 -->
+      <div class="section-2">
+        <swiper-container [loop]="true" [pagination]="true">
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/lotion4.jpg" alt="" >
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/lotion3.jpg" alt="">
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/massage3.jpg" alt="" >
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+          <swiper-slide >
+            <div class="img-div">
+              <img src="../../../assets/icon/massage4.jpg" alt="" >
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      <!-- section-3 -->
+      <div class="section-3">
+        <div class="div1">
+         <p>Massage Cream</p>
+         <!-- <span>63 kilometers away</span> -->
+         <span>&#8377; 399</span>
+         <div class="location-div">
+           <ion-icon name="location-outline"></ion-icon>
+           <span>Vaishali Nagar, Jaipur , India</span>
+         </div>
+        </div>
+        <div  class="div2">
+         <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+        </div>
+           </div>
+      </div>
+      <!-- slider content-2 -->
+      <div class="slider-content-1">
+        <!-- section-2 -->
+        <div class="section-2">
+          <swiper-container [loop]="true" [pagination]="true">
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/lotion3.jpg" alt="" >
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/lotion3.jpg" alt="">
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/massage3.jpg" alt="" >
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+            <swiper-slide >
+              <div class="img-div">
+                <img src="../../../assets/icon/massage4.jpg" alt="" >
+                <ion-icon name="heart-outline"></ion-icon>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+        <!-- section-3 -->
+        <div class="section-3">
+          <div class="div1">
+           <p>Massage Cream</p>
+           <!-- <span>63 kilometers away</span> -->
+           <span>&#8377; 399</span>
+           <div class="location-div">
+             <ion-icon name="location-outline"></ion-icon>
+             <span>Vaishali Nagar, Jaipur , India</span>
+           </div>
+          </div>
+          <div  class="div2">
+           <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+          </div>
+             </div>
+        </div>
+         <!-- slider content-3 -->
+         <div class="slider-content-1">
+          <!-- section-2 -->
+          <div class="section-2">
+            <swiper-container [loop]="true" [pagination]="true">
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/massage4.jpg" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/lotion3.jpg" alt="">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/massage3.jpg" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+              <swiper-slide >
+                <div class="img-div">
+                  <img src="../../../assets/icon/massage4.jpg" alt="" >
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+          <!-- section-3 -->
+          <div class="section-3">
+            <div class="div1">
+             <p>Massage Cream</p>
+             <!-- <span>63 kilometers away</span> -->
+             <span>&#8377; 399</span>
+             <div class="location-div">
+               <ion-icon name="location-outline"></ion-icon>
+               <span>Vaishali Nagar, Jaipur , India</span>
+             </div>
+            </div>
+            <div  class="div2">
+             <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+            </div>
+               </div>
+          </div>
+
+           <!-- slider content-4 -->
+           <div class="slider-content-1">
+            <!-- section-2 -->
+            <div class="section-2">
+              <swiper-container [loop]="true" [pagination]="true">
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/massage3.jpg" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/lotion3.jpg" alt="">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/massage3.jpg" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+                <swiper-slide >
+                  <div class="img-div">
+                    <img src="../../../assets/icon/massage4.jpg" alt="" >
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+            <!-- section-3 -->
+            <div class="section-3">
+              <div class="div1">
+               <p>Massage Cream</p>
+               <!-- <span>63 kilometers away</span> -->
+               <span>&#8377; 399</span>
+               <div class="location-div">
+                 <ion-icon name="location-outline"></ion-icon>
+                 <span>Vaishali Nagar, Jaipur , India</span>
+               </div>
+              </div>
+              <div  class="div2">
+               <ion-button routerLink="/reserve">Add to Cart</ion-button>
+
+              </div>
+                 </div>
+            </div>
+     </div>
+    </div>
+
+  </div>
+  </div>
+</ion-content>
+<app-footer></app-footer>

@@ -1,0 +1,102 @@
+*{
+    font-family: var(   --poppins-font-family);
+}
+ion-header{
+    .header-tool{
+       --background:var( --btn-bg);
+        padding-left: 15px;
+        padding-right: 15px;
+        .header-div{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 15px;
+        
+            ion-icon{
+                font-size: 25px;
+                 color: var( --text-color2);
+            }
+            p{
+                 color: var( --text-color2);
+                font-size: 16px;
+                font-weight: 500;
+                margin-top: 0;
+                margin-bottom: 5px;
+    
+               }
+        }
+    }
+}
+ion-content{
+    .main-div{
+        height: 100%;
+        background: var(--app-background);
+        padding-top: 15px;
+        padding-bottom: 10px;
+       
+        ion-accordion-group ion-accordion{
+            margin-bottom: 10px;       
+         ion-item{   
+            --background:var(--app-background);
+             color: var( --text-color);
+            // padding-bottom: 5px;
+            .inner{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+                line-height: 8px;            
+             
+                p{
+                     color: var( --text-color);
+                    font-size: 16px;
+                    font-weight: 500;
+                }              
+            }    
+            .span-tag{
+                font-size: 14px;
+                color: var( --small-tag);
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 0;
+                padding-top: 0;
+            } 
+        }    
+        .contents{
+           background-color: rgb(216, 216, 216);
+           .first-content{
+            ion-item{
+                border: 1px solid rgb(194, 194, 194);
+                border-radius: 10px;
+                margin-bottom: 8px;
+            }
+            .btn-div{
+                padding-top: 5px;
+                text-align: center;
+                ion-button{
+                    --background:var( --btn-bg);
+                    color: var( --text-color2);
+                    font-size: 13px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    width: 80px;
+                }
+            }
+           }
+        }
+        .accordion-content{
+            background-color: #f0f0f0;
+        }
+  
+        }
+        .btn-div{
+            padding-top: 10px;
+            ion-button{
+                --background: var(--btn-bg);
+                color: var( --text-color2);
+            }
+        }
+
+         }
+       
+    }

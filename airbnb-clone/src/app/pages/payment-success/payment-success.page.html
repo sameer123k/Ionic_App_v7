@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="header-tool">
+  <div class="header-div">
+    <ion-icon name="arrow-back-outline" routerLink="/payment-method"></ion-icon>
+    <div>
+      <p>Order Confirmation</p>
+    </div>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-div">
+    <div class="section-1">
+    <div>
+      <img src="../../../assets/icon/payment-success.webp" alt="">
+    </div>
+    <div class="ion-text-center">
+      <p>Payment Successful</p>
+      <span>Transaction Id : 012345</span>
+    </div>
+    </div>
+    <div class="section-2">
+      <p>Amount paid <span>&#8377; 698</span></p>
+      <p>Payout by <span>Credit card</span></p>
+    </div>
+    <div class="section-3">
+      <ion-button routerLink="/main-home">Done</ion-button>
+    </div>
+  </div>
+</ion-content>

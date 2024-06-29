@@ -1,0 +1,132 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="header-tool">
+  <div class="header-div">
+    <ion-icon name="arrow-back-outline" routerLink="/profile"></ion-icon>
+    <div>
+      <p>Update Profile</p>
+    </div>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+ <ion-content>
+  <div class="main-div">
+
+    <ion-accordion-group>
+      <ion-accordion >
+        <ion-item slot="header">
+          <div>
+            <div class="inner">
+           <!-- <ion-icon name="bulb-outline"></ion-icon> -->
+           <div>
+             <p>Name</p>
+           </div>
+         </div>
+         <!-- <span class="span-tag">unknown name</span> -->
+       </div>
+        </ion-item>
+        <div class=" accordion-content ion-padding contents" slot="content">
+          <div class="first-content">
+            <!-- 1st input -->
+            <ion-item lines="none">
+              <ion-label position="stacked">First name</ion-label>
+              <ion-input placeholder="Rahul"></ion-input>
+            </ion-item>
+            <!-- 2nd input -->
+            <ion-item lines="none">
+              <ion-label position="stacked">Last name</ion-label>
+              <ion-input placeholder="Yadav"></ion-input>
+            </ion-item>
+            <div class="btn-div">
+              <ion-button>Save</ion-button>
+            </div>
+          </div>
+        </div>
+      </ion-accordion>
+    
+      <ion-accordion >
+        <ion-item slot="header" >
+          <div>
+            <div class="inner">
+           <!-- <ion-icon name="bulb-outline"></ion-icon> -->
+           <div>
+             <p>Email</p>
+           </div>
+         </div>
+         <!-- <span class="span-tag">unknown123@gmail.com</span> -->
+       </div>
+        </ion-item>
+        <div class="accordion-content ion-padding contents" slot="content">
+          <div class="first-content">
+            <!-- 1st input -->
+            <ion-item lines="none">
+              <ion-label position="stacked">Email</ion-label>
+              <ion-input placeholder="rahul546@gmail.com"></ion-input>
+            </ion-item>
+            <div class="btn-div">
+              <ion-button>Save</ion-button>
+            </div>
+          </div>
+        </div>
+      </ion-accordion>
+
+      <ion-accordion >
+        <ion-item slot="header" >
+          <div>
+            <div class="inner">
+           <!-- <ion-icon name="bulb-outline"></ion-icon> -->
+           <div>
+             <p>Phone number</p>
+           </div>
+         </div>
+         <!-- <span class="span-tag">Not provided</span> -->
+       </div>
+        </ion-item>
+        <div class="accordion-content ion-padding contents" slot="content">
+          <div class="first-content">
+            <!-- 1st input -->
+            <ion-item lines="none">
+              <ion-label position="stacked">Phone number</ion-label>
+              <ion-input placeholder="9876543210"></ion-input>
+            </ion-item>
+            <div class="btn-div">
+              <ion-button>Save</ion-button>
+            </div>
+          </div>
+        </div>
+      </ion-accordion>
+
+      <ion-accordion >
+        <ion-item slot="header" >
+          <div>
+            <div class="inner">
+           <!-- <ion-icon name="bulb-outline"></ion-icon> -->
+           <div>
+             <p>Password</p>
+           </div>
+         </div>
+         <!-- <span class="span-tag">Not Provided</span> -->
+       </div>
+        </ion-item>
+        <div class=" accordion-content ion-padding contents" slot="content">
+          <div class="first-content">
+            <!-- 1st input -->
+            <ion-item lines="none">
+              <ion-label position="stacked">Password</ion-label>
+              <ion-input placeholder="rahul1272" type="Password"></ion-input>
+            </ion-item>
+            <div class="btn-div">
+              <ion-button>Save</ion-button>
+            </div>
+          </div>
+        </div>
+      </ion-accordion>
+
+      
+      </ion-accordion-group>
+
+      <div class="btn-div ion-margin">
+        <ion-button expand="block">Update Profile</ion-button>
+      </div>
+  </div>
+ </ion-content>

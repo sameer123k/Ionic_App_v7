@@ -1,0 +1,162 @@
+<ion-header>
+  <ion-toolbar class="header-tool">
+  <div class="header-div">
+    <ion-icon name="arrow-back-outline" (click)="goBack()"></ion-icon>
+    <div>
+    <p>Cart</p>
+    </div>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="main-div">
+   <!-- section-1 -->
+   <div class="section-1">
+     <p>Check delivery time & services</p>
+     <div>
+       <span>ENTER PIN CODE</span>
+     </div>
+   </div>
+   <!-- section-2 -->
+   <div class="section-2">
+     <div class="inner">
+       <ion-icon name="help-circle-outline"></ion-icon>
+       <div>
+         <p>Available Offers</p>
+       </div>
+     </div>
+     <div class="inner2">
+       <span>10% Instant Discount on Kotak Credit & Debit Cards on a min spend of &#8377;3,000 TCA</span>
+       <p>Show More <ion-icon name="chevron-down-outline"></ion-icon></p>
+     </div>
+   </div>
+   <!-- section-3 -->
+   <div class="section-3">
+     <ion-icon name="help-circle-outline"></ion-icon>
+     <div>
+       <p>You're saving <span>&#8377;200</span> on this order</p>
+     </div>
+   </div>
+   <!-- section-4 -->
+   <div class="section-4">
+     <div class="inner">
+       <ion-checkbox color="tertiary" value="checked"></ion-checkbox>
+       <p>1/1 ITEMS SELECTED <span>(&#8377;1999)</span></p>      
+     </div>
+     <div class="inner2">
+       <ion-icon name="share-social-outline"></ion-icon>
+       <ion-icon name="trash-outline"></ion-icon>
+       <ion-icon name="heart-outline"></ion-icon>
+     </div>
+   </div>
+   <!-- section-5 -->
+   <div class="section-5">
+     <!-- img div -->
+     <div  class="img-div">
+       <!-- <img src="../../assets/icon/Paracetamol" alt="">
+       -->
+       <img src="../../../assets/icon/pack2.webp" alt="" class="rounded">
+     </div>
+     <!-- 2nd div -->
+     <div class="div2">
+       <div class="inner">
+         <p>Face Pack</p>
+       <ion-icon name="close-outline"></ion-icon>
+       </div>
+       <div class="inner2">
+         <span> Natural & No Side Effect </span>
+         <!-- <p>Sold by: Westbury Hold...</p> -->
+       </div>
+       <div class="inner3">
+ 
+        <!-- <div class="size-div">
+         <span>Size:</span>
+         <ion-list>
+           <ion-item lines="none">
+             <ion-select interface="popover" value="bananas">
+               <ion-select-option value="apples">6</ion-select-option>
+               <ion-select-option value="oranges">7</ion-select-option>
+               <ion-select-option value="bananas">8</ion-select-option>
+               <ion-select-option value="bananas">9</ion-select-option>
+               <ion-select-option value="bananas">10</ion-select-option>
+             </ion-select>
+           </ion-item>
+         </ion-list>
+        </div> -->
+ 
+         <div class="quantity-div">
+           <span>Qty:</span>
+         <ion-list>
+           <ion-item lines="none">
+             <ion-select interface="popover" value="oranges">
+               <ion-select-option value="apples">1</ion-select-option>
+               <ion-select-option value="oranges">2</ion-select-option>
+               <ion-select-option value="bananas">3</ion-select-option>
+               <ion-select-option value="bananas">4</ion-select-option>
+               <ion-select-option value="bananas">5</ion-select-option>
+             </ion-select>
+           </ion-item>
+         </ion-list>
+         </div>
+       </div>
+     <div class="inner4">
+      <span> &#8377; 798</span>
+     </div>
+     <div class="inner5">
+     <p>Coupon Discount:  &#8377;100</p>
+     </div>
+     <div class="inner6">
+       <ion-icon name="sync-circle-outline"></ion-icon>
+       <div>
+         <p><span>14 days</span> return available</p>
+       </div>
+       </div>
+ 
+     </div>
+   </div>
+   <!-- section-6 -->
+   <div class="section-6">
+     <p>PRICE DETAILS (1 item)</p>
+     <div class="price-div">
+       <div class="div1">
+       <div>
+         <span>Total MRP</span>
+       </div>
+        <div>
+         <span>Coupon Discount</span>
+        </div>
+       <div>
+         <span>Convenience Fee</span>
+       </div>
+       </div>
+       <div class="div2">
+        <div>
+         <span> &#8377; 798</span>
+        </div>
+      <div>
+       <span>-&#8377;100</span>
+      </div>
+      <div>
+       <span><del>&#8377;59</del> FREE</span>
+      </div>
+       </div>
+     </div>
+     <div class="total-amount">
+       <span>Total Amount</span>
+       <div>
+     <span>&#8377; 698</span>
+       </div>
+     </div>
+   </div>
+ 
+  </div>
+ </ion-content>
+ <ion-footer>
+  <div class="section-1">
+    <span>1 item selected for order</span>
+  </div>
+  <div class="section-2">
+    <ion-button expand="block" routerLink="/payment-method">PLACE ORDER</ion-button>
+  </div>
+</ion-footer>

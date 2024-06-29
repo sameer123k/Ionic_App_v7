@@ -1,0 +1,11 @@
+*{
+    font-family: var( --poppins-font-family);
+}
+ion-content{
+    ion-tabs ion-tab-bar{
+        --background:var( --app-background);
+        ion-tab-button{
+            color: black;
+        }
+    }
+}

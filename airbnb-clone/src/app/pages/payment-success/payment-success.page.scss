@@ -1,0 +1,93 @@
+*{
+    font-family: var( --poppins-font-family);
+}
+ion-header{
+    .header-tool{
+        --background: var( --btn-bg);
+        padding-left: 10px;
+        .header-div{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 15px;
+            ion-icon{
+                color: var( --text-color2);
+                font-size: 25px;
+            }
+            p{
+                color: var( --text-color2);
+                font-weight: 500;
+                font-size: 15px;
+                margin: 0;
+            }
+        }
+    }
+}
+ion-content{
+    .main-div{
+        height: 100%;
+        background: var( --app-background);
+        //  padding-top: 20px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         .section-1{
+            display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         border-bottom: 1px solid gray;
+         width: 80%;
+         padding-bottom: 1.2rem;
+            img{
+                height: 110px;
+                mix-blend-mode: darken;
+            }
+            p{
+                color: var( --text-color);
+                font-size: 18px;
+                font-weight: 700;
+                margin: 0;
+            }
+            span{
+                font-size: 14px;
+                color: var( --small-tag);
+
+            }
+         }
+         .section-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            // border-bottom: 1px solid gray;
+            width: 80%;
+            padding-top: 1rem;
+            p{
+                color: var( --text-color);
+                font-size: 15px;
+                font-weight: 500;
+                margin: 0;
+                span{
+                    font-size: 14px;
+                    color: var( --btn-bg);
+                    font-weight: 600;  
+                    margin-top: 5px;  
+                }
+            }
+          
+         }
+         .section-3{
+            text-align: center;
+            padding-top: 1.5rem;
+            ion-button{
+                   --background:var(--btn-bg);
+                   color: var( --text-color2);
+                   text-transform: capitalize;
+                   font-size: 13px;
+            }
+         }
+        
+    }
+}

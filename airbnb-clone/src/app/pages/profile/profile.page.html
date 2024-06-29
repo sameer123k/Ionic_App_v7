@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="header-tool">
+  <div class="header-div">
+    <h2 *ngFor="let data of nameData">{{data}}</h2>
+    <div>
+      <ion-icon name="notifications-outline" routerLink="/notifications"></ion-icon>
+    </div>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <div class="main-div">
+
+  <!-- <p>Settings</p> -->
+  <div class="section-2 ion-margin" routerLink="/personal-information">
+    <div class="language-div">
+        <p class="Language-p1">Update Profile</p>
+    </div>
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+  </div>
+  <div class="section-2 ion-margin" routerLink="/payment-payouts">
+    <div class="language-div">
+        <p class="Language-p1">My Address</p>
+    </div>
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+  </div>
+
+  <div class="section-2 ion-margin" routerLink="/home">
+    <div class="language-div">
+        <p class="Language-p1">Logout</p>
+    </div>
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+  </div>
+
+ </div>
+</ion-content>
+<app-footer></app-footer>

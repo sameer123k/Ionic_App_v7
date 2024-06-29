@@ -1,0 +1,42 @@
+
+<ion-content>
+    <div class="main-div">
+    <!-- header arrow section -->
+        <div class="header-div">
+          <ion-icon name="arrow-back-outline" routerLink="/reserve"></ion-icon>
+        </div>
+        <!-- section-1 -->
+        <div class="section-1">
+          <h4>Add a credit / debit card</h4>
+          <div class="input-div">
+            <ion-item lines="none">
+              <ion-input label="Card number" labelPlacement="stacked" placeholder="1234 1234 1234 1234"></ion-input>
+            </ion-item>
+            <ion-icon name="card-outline"></ion-icon>
+          </div>       
+        </div>
+        <!-- section-2 -->
+        <div class="section-2">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-item lines="none">
+                  <ion-input label="Expiration date" labelPlacement="stacked" placeholder="MM/YY"></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                <ion-item lines="none">
+                  <ion-input label="CVC" labelPlacement="stacked" placeholder="123"></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+        <!-- section-3 -->
+        <div class="section-3 ion-text-center ion-margin">
+          <ion-button expand="block" routerLink="/payment-success">Make Payment</ion-button>
+        </div>
+    </div>
+     
+  </ion-content>
+  

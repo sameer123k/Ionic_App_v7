@@ -1,0 +1,63 @@
+<ion-content [fullscreen]="true">
+  <div class="main-div">
+    <div class="section-1">
+      <h2>Contact us</h2>
+      </div>
+      <div class="section-2">
+        <!-- <h4>You have no unread messages</h4> -->
+        <p>We are happy to hear from you about our Service and how we can help you..</p>
+      </div>
+      <!-- section-3 -->
+      <div class="section-3">
+        <div class="section-2">
+          <ion-item lines="none">
+            <ion-input placeholder="Full Name" type="text"></ion-input>
+          </ion-item>         
+         </div>
+    
+         <div class="div2 ion-margin">
+          <!-- <div class="code-div"><p class="code">+91</p></div> -->
+          <div class="input-div2">
+           <ion-select value="apple">
+             <ion-select-option value="apple">+91</ion-select-option>
+             <ion-select-option value="banana">+1</ion-select-option>
+             <ion-select-option value="orange">+48</ion-select-option>
+             <ion-select-option value="orange">+84</ion-select-option>
+             <ion-select-option value="orange">+58</ion-select-option>
+             <ion-select-option value="orange">+44</ion-select-option>
+             <ion-select-option value="orange">+66</ion-select-option>
+           </ion-select>
+        </div>
+          <div>
+              <ion-input placeholder="Phone number"></ion-input>
+          </div>
+         </div>
+         <!-- section-2 -->
+        <div class="section-2">
+          <ion-item lines="none">
+            <ion-input placeholder="Email Id" type="email"></ion-input>
+          </ion-item>         
+         </div>
+    
+         <div class="section-3">
+          <div class="main">
+          <div class="inner">
+            <ion-item lines="none">
+              <ion-input placeholder="Password" [type]="passwordType" clearOnEdit="false"></ion-input>
+             <p (click)='hideShowPassword()'>Show</p>
+            </ion-item>
+          </div>
+          </div>
+        </div>
+        <div class="section-2">
+          <ion-item lines="none">
+            <ion-textarea placeholder="Your Message *"></ion-textarea>
+          </ion-item>
+        </div>
+      </div>
+      <div class="button-div">
+        <ion-button expand="block">Submit</ion-button>
+      </div>
+  </div>
+</ion-content>
+<app-footer></app-footer>

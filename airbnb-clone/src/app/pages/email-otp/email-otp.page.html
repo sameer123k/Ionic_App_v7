@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar class="header-tool">
+    <div class="header">
+      <ion-icon name="arrow-back-outline" class="back-arrow" routerLink="/continue-email"></ion-icon>
+     <div>
+     </div>
+      </div>
+ 
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+ <div class="main-div">
+  <!-- section-1 -->
+  <div class="section-1">
+    <h4>Add your info</h4>
+  </div>
+  <!-- section-2 -->
+  <div class="section-2">
+    <div class="main">
+    <div class="inner">
+      <ion-item lines="none">
+        <ion-input placeholder="First name"></ion-input>
+      </ion-item>
+    </div>
+    <div class="inner2">
+      <ion-item lines="none">
+        <ion-input placeholder="Last name"></ion-input>
+      </ion-item>
+    </div>
+    </div>
+    <small>Make sure it matches the name on your government ID.</small>
+  </div>
+  <!-- section-3 -->
+  <div class="section-3">
+    <div class="main">
+    <div class="inner">
+      <ion-item lines="none">
+        <ion-input placeholder="Birthday"></ion-input>
+      </ion-item>
+    </div>
+    </div>
+    <small>To sign up, you need to be atleast 18.</small>
+  </div>
+  <!-- section-4 -->
+  <div class="section-3">
+    <div class="main">
+    <div class="inner">
+      <ion-item lines="none">
+        <ion-input placeholder="Email"></ion-input>
+      </ion-item>
+    </div>
+    </div>
+    <small>We'll email you a reservation confirmation.</small>
+  </div>
+  <!-- section-5 -->
+  <div class="section-3">
+    <div class="main">
+    <div class="inner">
+      <ion-item lines="none">
+        <ion-input placeholder="Password" [type]="passwordType" clearOnEdit="false"></ion-input>
+       <p (click)='hideShowPassword()'>Show</p>
+      </ion-item>
+    </div>
+    </div>
+  </div>
+  <!-- terms & conditions -->
+  <div class="terms">
+   <p>By selecting <span>Agree and continue</span> , I agree to Airbnb's <span>Terms of Service,</span> Payments Terms of Service.</p>
+  </div>
+   <!-- agree buttons -->
+   <div class="btn">
+    <ion-button expand="block" routerLink="/main-home">Agree and continue</ion-button>
+   </div>
+ </div>
+</ion-content>

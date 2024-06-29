@@ -1,0 +1,126 @@
+<ion-content [fullscreen]="true">
+  <div class="main-bg-box">
+    <!-- header -->
+    <div class="header">
+      <ion-icon name="arrow-back-outline" class="back-arrow" routerLink="/home"></ion-icon>
+     <div>
+     </div>
+      </div>
+     <!-- Section-1 -->
+     <div class="section-1">
+      <p>Sign up to Facial Products</p>
+     </div>
+     <div class="section-2">
+      <ion-item lines="none">
+        <ion-input placeholder="Full Name" type="text" [(ngModel)]="formData.name"></ion-input>
+      </ion-item>
+     </div>
+
+     <div class="div2 ion-margin">
+      <!-- <div class="code-div"><p class="code">+91</p></div> -->
+      <div class="input-div2">
+       <ion-select  [(ngModel)]="formData.code">
+         <ion-select-option>+91</ion-select-option>
+         <ion-select-option>+1</ion-select-option>
+         <ion-select-option>+48</ion-select-option>
+         <ion-select-option>+84</ion-select-option>
+         <ion-select-option>+58</ion-select-option>
+         <ion-select-option>+44</ion-select-option>
+         <ion-select-option>+66</ion-select-option>
+       </ion-select>
+    </div>
+      <div>
+          <ion-input placeholder="Phone number" [(ngModel)]="formData.number"></ion-input>
+      </div>
+     </div>
+     <!-- section-2 -->
+    <div class="section-2">
+      <ion-item lines="none">
+        <ion-input placeholder="Email Id" type="email" [(ngModel)]="formData.email"></ion-input>
+      </ion-item>
+     </div>
+
+     <div class="section-3">
+      <div class="main">
+      <div class="inner">
+        <ion-item lines="none">
+          <ion-input placeholder="Password" [type]="passwordType" clearOnEdit="false" [(ngModel)]="formData.password"></ion-input>
+         <p (click)='hideShowPassword()'>Show</p>
+        </ion-item>
+      </div>
+      </div>
+    </div>
+
+ <!-- button -->
+     <div class="btn-div">
+      <ion-button expand="block" routerLink="/main-home" (click)="GetData()">Signup</ion-button>
+    </div>
+
+    <div class="message">
+      <p class="small-tag ion-text-center">By using Facial Products , you agree to the <span>Terms of Use and Privacy Policy.</span> </p>
+    </div>
+
+    <!-- horizontal line -->
+    <!-- <div class="hr-line">
+      <h5 class="hr-lines">or</h5>
+    </div> -->
+
+
+    <!-- continue phone no.
+   <div class="continue-no" routerLink="/home">
+    <div class="border-div">
+      <div class="main">
+        <div>
+          <ion-icon name="mail-open-outline" class="phone-icon"></ion-icon>
+        </div>
+        <div>
+            <p class="p1"> Continue with Phone</p>
+            <p class="p2"></p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+    <!-- continue with Google -->
+  <!-- <div class="continue-google">
+    <div class="border-div">
+      <div class="main">
+        <div>
+          <ion-icon name="logo-google" class="phone-icon"></ion-icon>
+        </div>
+        <div>
+            <p class="p1"> Continue with Google </p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <!-- continue with facebook -->
+    <!-- <div class="continue-fb">
+      <div class="border-div">
+        <div class="main">
+          <div>
+            <ion-icon name="logo-facebook" class="phone-icon"></ion-icon>
+          </div>
+          <div>
+              <p class="p1"> Continue with Facebook </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="continue-fb">
+      <div class="border-div">
+        <div class="main">
+          <div>
+            <ion-icon name="logo-apple" class="phone-icon"></ion-icon>
+          </div>
+          <div>
+              <p class="p1"> Continue with Apple </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    </div>
+
+
+  </ion-content>

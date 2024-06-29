@@ -1,0 +1,109 @@
+*{
+    font-family: var(   --poppins-font-family);
+}
+ion-header{
+    .header-tool{
+       --background:var( --btn-bg);
+        padding-left: 15px;
+        padding-right: 15px;
+        .header-div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2{
+                color: var( --text-color2);
+                font-weight: 600;
+                font-size: 20px;
+                margin: 0;
+            }
+            ion-icon{
+                font-size: 25px;
+                color: var( --text-color2);
+            }
+        }
+    }
+}
+ion-content{
+    .main-div{
+        height: 100%;
+        background:var( --app-background);
+         padding-top: 10px;
+         padding-bottom: 20px;
+         .profile{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+            border-bottom: 1px solid rgb(206, 206, 206);
+            background-color: var(--app-background);
+            margin-bottom: 10px;
+            border-radius: 5px;
+            padding: 5px;
+            .inner{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 15px;  
+                padding: 6px;              
+                ion-icon{
+                    font-size: 35px;
+                    color: var( --text-color);
+                    padding-top: 5px;
+
+                }
+                p{
+                    color: var( --text-color);
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin:0;
+                    padding-bottom:8px !important;
+                    padding: 0;
+                }
+            }
+            .span-tag{
+                font-size: 14px;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 0;
+                padding-top: 0;
+                color: var(--small-tag);
+            }
+           ion-icon{
+            font-size: 20px;
+            color: var( --text-color);
+           }
+
+         }
+        
+         .section-2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(189, 189, 189);
+     
+            .language-div{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 10px;
+                
+                .Language-p1{
+                    color: var( --text-color);
+                    font-weight: 500;
+                    font-size: 16px;
+                    padding-left: 10px;
+
+                }
+            }
+            ion-icon{
+                color: var( --text-color);
+                font-size: 25px;
+            }
+         }    
+            
+    }
+    flex: 1;
+}
+app-footer{
+    height: 50px;
+}
